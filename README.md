@@ -1,4 +1,4 @@
-## 🛍️ AI Products E-commerce Platform
+## 🛍️ Online Products E-commerce Platform
 
 ![Home Page Screenshot](readme_images/home.png)
 
