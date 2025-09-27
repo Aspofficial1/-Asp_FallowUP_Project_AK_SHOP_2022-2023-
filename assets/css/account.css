@@ -1,0 +1,181 @@
+/*-----------------------------------*\
+ * #ACCOUNT PAGE STYLES
+\*-----------------------------------*/
+
+@import url('./style.css');
+
+.account-section {
+  padding-block: var(--section-padding);
+}
+
+.account-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-icon {
+  font-size: 48px;
+  color: var(--middle-blue-green);
+}
+
+.dark-mode .user-icon {
+  color: hsl(176, 35%, 50%);
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--eerie-black);
+}
+
+.user-email {
+  font-size: var(--fs-8);
+  color: var(--sonic-silver);
+}
+
+.dark-mode .user-name {
+  color: var(--white);
+}
+
+.dark-mode .user-email {
+  color: var(--dark-text);
+}
+
+.account-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: var(--fs-9);
+  border-radius: 6px;
+  transition: var(--transition-1);
+}
+
+.btn-primary {
+  background: var(--middle-blue-green);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: hsl(176, 35%, 40%);
+}
+
+.btn-secondary {
+  background: var(--cultured);
+  color: var(--eerie-black);
+  border: 1px solid var(--sonic-silver);
+}
+
+.btn-secondary:hover {
+  background: var(--sonic-silver);
+  color: var(--white);
+}
+
+.dark-mode .btn-primary {
+  background: hsl(176, 35%, 50%);
+}
+
+.dark-mode .btn-primary:hover {
+  background: hsl(176, 35%, 60%);
+}
+
+.dark-mode .btn-secondary {
+  background: var(--dark-card);
+  color: var(--dark-text);
+  border-color: var(--dark-text);
+}
+
+.dark-mode .btn-secondary:hover {
+  background: var(--dark-text);
+  color: var(--dark-bg);
+}
+
+.history-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  margin-bottom: 20px;
+  color: var(--eerie-black);
+}
+
+.dark-mode .history-title {
+  color: var(--white);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-9);
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--cultured);
+}
+
+.history-table th {
+  font-weight: var(--fw-600);
+  color: var(--eerie-black);
+}
+
+.history-table td {
+  color: var(--sonic-silver);
+}
+
+.dark-mode .history-table th {
+  color: var(--white);
+}
+
+.dark-mode .history-table td {
+  color: var(--dark-text);
+}
+
+.dark-mode .history-table {
+  border-bottom-color: var(--dark-card);
+}
+
+@media (max-width: 768px) {
+  .account-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .history-table {
+    font-size: var(--fs-10);
+  }
+}
+
+@media (max-width: 480px) {
+  .history-table th,
+  .history-table td {
+    padding: 8px;
+  }
+
+  .user-icon {
+    font-size: 36px;
+  }
+}

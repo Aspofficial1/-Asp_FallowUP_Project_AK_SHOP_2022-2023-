@@ -1,0 +1,8 @@
+# Ignore assets/images directory and its contents
+assets/images/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
